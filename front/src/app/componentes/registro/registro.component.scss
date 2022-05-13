@@ -1,0 +1,24 @@
+
+
+@import "../../../../node_modules/bootstrap/scss/mixins";
+@import "../../../../node_modules/bootstrap/scss/functions";
+@import "../../../../node_modules/bootstrap/scss/variables";
+@import "../../../assets/styles2.scss";
+.contenedor{
+  margin: auto;
+  width: 65vh;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  
+  background-color: $claroA;
+}
+
+.botones
+{
+  display: flex;
+  justify-content: space-around;
+}
+
+.input{
+ padding-left: 1rem; 
+}

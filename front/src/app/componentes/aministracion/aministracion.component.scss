@@ -1,0 +1,90 @@
+
+
+@import "../../../../node_modules/bootstrap/scss/mixins";
+@import "../../../../node_modules/bootstrap/scss/functions";
+@import "../../../../node_modules/bootstrap/scss/variables";
+@import "../../../assets/styles2.scss";
+.containerTable{
+    font: 100% Arial, Helvetica;
+    max-width: 1500px;
+    background: #f7f7f7;
+    margin-top:1px;
+    margin-right: 7rem;
+
+  }  
+
+  .fila{
+    transition: all 0,30s ease-in-out;
+    outline: none;
+    box-sizing: rgb(71, 88, 84);
+    width: 300px;
+    background: #ffffff;
+    border: 1px solid #ccc;
+    padding: 3%;
+    color: #555;
+    font: 95% Arial, helvetica, sans-serial;
+    margin-top: 5px ;
+    text-align: center;
+  }
+  .filaId{
+    box-sizing: border-box;
+    width: 300px;
+    background: #ffffff;
+    border: 1px solid #ccc;
+    padding: 3%;
+    color: #555;
+    font: 95% Arial, helvetica, sans-serial;
+    margin-top: 5px ;
+  }
+  th{
+    text-align: center ;
+  }
+
+  .botonPaginator{
+    margin-left: 10px;
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+   
+    background: $claroB;
+    border-bottom: 2px solid $claroC;
+    border-top-style: none;
+    border-left-style:none ;
+    color:#fff;
+    font-size: 30px;
+    margin-top: 10px;
+    text-align: center;
+    display: inline-block;
+  
+  }
+  p{
+    text-align: center;
+    margin-left: 10px;
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+  }
+  .containerbuton{
+    margin-left : 15%;
+  }
+  .contenedor{
+      display: flex;
+      justify-content: space-between;
+      margin: 3rem;
+  }
+  .button {
+    width: 100%;
+    display: inline;
+    text-overflow: ellipsis;
+    letter-spacing: 0.5px;
+  
+    &:hover {
+      background-color: rgba($claro-color, 0.2);
+      border-bottom: 3px solid black;
+      ::ng-deep .mat-button-wrapper {
+          color: $claroB;
+      }
+    }
+  
+  }

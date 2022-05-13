@@ -1,0 +1,109 @@
+
+
+<div class="inicio">
+  <div class="divIzq">
+     
+      <div class="card">
+        <img
+          src="../../assets/veter.jpg"
+          class="card-img-top imgVeter"
+          contenteditable="imgCard"
+        />
+        <div class="card-body">
+          <p class="card-text">
+            Consulta cualqueir duda sobre tu perro con nuestros veterianrios
+          </p>
+        
+        </div>
+      </div>
+    <div class="">
+
+
+
+
+      <div class="btns">
+          <div>
+            <app-veterinario></app-veterinario>
+          </div>
+          <div>
+            <app-subir-foto></app-subir-foto>
+          </div>
+          <div>
+
+            <button
+              class="button"
+              mat-button
+              [disableRipple]="true"  
+              [ngClass]="botonClicado ===  'galeria' ? 'buttonSportsSelected' : ''"          
+              (click)="mostrarGale()"
+              >
+                Galeria <mat-icon style="margin-left: 1rem; color: #214ea8;">collections</mat-icon>
+            </button>
+          </div>
+          <div>
+
+            <button
+              class="button"
+              mat-button
+              [disableRipple]="true"  
+              [ngClass]="botonClicado ===  'galeria' ? 'buttonSportsSelected' : ''"          
+              (click)="consultas()"
+              >
+                Consultas <mat-icon style="margin-left: 1rem; color: #214ea8;">collections</mat-icon>
+            </button>
+          </div>
+          <div>
+
+            <button
+              class="button"
+              mat-button
+              [disableRipple]="true"  
+              [ngClass]="botonClicado ===  'galeria' ? 'buttonSportsSelected' : ''"          
+              (click)="personas()"
+              >
+               Usuarios <mat-icon style="margin-left: 1rem; color: #214ea8;">collections</mat-icon>
+            </button>
+          </div>
+           <div>
+
+             <button
+               class="button"
+               mat-button
+               [disableRipple]="true"
+               [ngClass]="botonClicado ===  'chat' ? 'buttonSportsSelected' : ''"          
+               (click)="activarChat()"
+               >
+                 Chat	<mat-icon style="margin-left: 1rem; color: #214ea8;"> chat</mat-icon>
+             </button>
+           </div>
+          </div>
+
+    </div>
+  </div>
+
+  <div class="noticiasYchat">
+
+          <div class="centro">
+          
+            <div  *ngIf="abrirChat">
+            
+                
+                <app-noticias></app-noticias>
+          
+          
+            </div>
+            <div class="noticiasSinChat " *ngIf="!abrirChat">
+            
+                <br /><br />
+                <app-noticias></app-noticias>
+          
+            </div>
+          </div>
+          
+            <div class="chat " *ngIf="abrirChat">
+              <app-chat></app-chat>
+            </div>
+  </div>
+
+</div>
+

@@ -1,0 +1,20 @@
+
+
+    $claroA:#dae1ef;
+    $claro-color : #B0BCD5;
+    $claroB : #6D86B6;
+    $claroC: #0A1731;  
+    $oscuro : #020B1C;
+    $fondo : #ffffff;
+    $bordes : #6D86B6;
+
+    $secondary-color-lighter : rgb(252, 180, 86);
+    $tipoLetraPrimary : 'Times New Roman', Times, serif;
+
+    div{
+        background-color: rgb(150, 11, 11) !important;
+    }
+    .botones {
+  
+        border-right: 30px solid $bordes !important;
+    }

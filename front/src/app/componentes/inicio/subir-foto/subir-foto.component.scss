@@ -1,0 +1,69 @@
+
+@import "../../../../../node_modules/bootstrap/scss/mixins";
+@import "../../../../../node_modules/bootstrap/scss/functions";
+@import "../../../../../node_modules/bootstrap/scss/variables";
+@import "../../../../assets/styles2.scss";
+
+
+@include media-breakpoint-down(md) {
+ 
+    
+
+    
+}
+
+
+.contenido{
+    font-family: $tipoLetraPrimary;
+
+}
+.enviar{
+    width: 100%;
+    border-radius:15px ;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    font-family: $tipoLetraPrimary;
+
+    background-color: $oscuro;
+}
+.foter{
+    display: flex;
+    justify-items: flex-end;
+
+}
+.foto{
+    background-color: $claro-color;
+    border-color: $claro-color;
+}
+img{
+    max-width: 30rem;
+    height: 100%;
+}
+.btnOpen{
+    justify-items: flex-end;
+
+    
+}
+  
+.button {
+    width: 100%;
+    display: inline;
+    text-overflow: ellipsis;
+    letter-spacing: 0.5px;
+
+    &:hover {
+      background-color: rgba($claro-color, 0.2);
+      border-bottom: 3px solid black;
+      ::ng-deep .mat-button-wrapper {
+          color: $claroB;
+      }
+    }
+
+    mat-icon {
+      margin-right: 0.5rem;
+    }
+  }
+
+  .buttonSportsSelected {
+     border-bottom: solid 2px black;
+  }

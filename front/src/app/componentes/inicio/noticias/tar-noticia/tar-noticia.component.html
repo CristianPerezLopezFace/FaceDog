@@ -1,0 +1,93 @@
+
+
+<div class="scroll">
+  <mat-card
+    class="example-card"
+    style="background-color: 223, 154, 177; margin-bottom: 1rem"
+  >
+    <mat-card-header>
+    
+     
+        
+        
+    
+    </mat-card-header>
+    <img mat-card-image (click)="openDialog(foto)" src="{{ foto.foto }}" alt="Photo of a Shiba Inu" />
+    <mat-card-content>
+      <div class="nomYfecha">
+        <div >
+             <p>
+               {{ nameUserNoticia }}
+             </p>
+        </div>
+        <div >
+          <p>
+            {{ foto.fechaModificacion | dateChange }}
+          </p>
+        </div>
+      </div>
+      <div class="descripcion">
+        {{ foto.descripcion }}
+      </div>
+
+      <div class="nav-item dropdown">
+          <button mat-icon-button [matMenuTriggerFor]="menu"  (mouseenter)="getNombresLike(foto.likes)"
+         *ngIf="!veterinario" mat-button (click)="like(foto.id)">
+              <mat-icon  style="color: #214ea8;">thumb_up</mat-icon>
+      
+              {{ foto.likes.length }}
+            </button>
+            <mat-menu #menu="matMenu">
+                
+            <button mat-menu-item *ngFor="let nombre of nombres">
+              <mat-icon>person</mat-icon>
+              <span style="text-align: center;">{{nombre}}</span>
+            </button>
+                
+      
+            </mat-menu>
+        <button mat-button (click)="ver()" class="btnComent">
+          <mat-icon style="color: #214ea8;">speaker_notes</mat-icon>{{ foto.comentarios.length }}
+        </button>
+        <div *ngIf="mostrar">
+          <div
+            *ngIf="foto.comentarios.length > 0"
+            class="scrollComen"
+            style="overflow: scroll; overflow-x: hidden"
+          >
+            <div *ngFor="let comentario of foto.comentarios; index as i">
+              <app-comentario
+                [comentario]="comentario"
+                [idFoto]="foto.id"
+                [veterinario] = veterinario
+                [posicionEnLista] = i
+              ></app-comentario>
+            </div>
+          </div>
+        </div>
+      </div>
+    </mat-card-content>
+
+    <mat-card-actions>
+     
+      <form class="example-form">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Comentario</mat-label>
+          <input matInput type="text" name="value" [(ngModel)]="value" />
+
+          <button
+            matSuffix
+            mat-icon-button
+            aria-label="Clear"
+            (click)="comentar(foto.id, foto.email, foto); value = ''"
+          >
+            <mat-icon>send</mat-icon>
+          </button>
+        </mat-form-field>
+      </form>
+    </mat-card-actions>
+  </mat-card>
+
+</div>
+
+

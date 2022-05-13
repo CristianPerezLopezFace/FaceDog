@@ -1,0 +1,65 @@
+
+
+@import "../../../../node_modules/bootstrap/scss/mixins";
+@import "../../../../node_modules/bootstrap/scss/functions";
+@import "../../../../node_modules/bootstrap/scss/variables";
+
+
+@import "../../../assets/styles2.scss";
+
+  
+
+   
+.contenedor{
+display: flex;
+overflow:scroll;
+
+
+}
+.a{
+    
+    flex-direction: row-reverse !important;
+
+
+}
+
+
+ 
+      
+::-webkit-scrollbar {
+-webkit-appearance: none;
+}
+
+::-webkit-scrollbar:vertical {
+width: 5px;
+}
+
+::-webkit-scrollbar-button:increment,
+.contenedor::-webkit-scrollbar-button {
+display: none;
+}
+
+::-webkit-scrollbar:horizontal {
+height: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+background-color: #797979;
+border-radius: 20px;
+border-right: 3px solid $bordes;
+}
+
+::-webkit-scrollbar-track {
+border-radius: 10px;
+}
+      
+button{
+    width: 200px;
+}
+.map-responsive{
+    height: 30rem;
+   
+}
+.map-responsive iframe{
+
+}

@@ -1,0 +1,48 @@
+
+
+
+
+
+
+
+@import "../../../../../../../node_modules/bootstrap/scss/mixins";
+@import "../../../../../../../node_modules/bootstrap/scss/functions";
+@import "../../../../../../../node_modules/bootstrap/scss/variables";
+
+@import "../../../../../../assets/styles2.scss";
+
+@include media-breakpoint-down(md) {
+
+}
+
+p{
+    font-size:  1.6rem;
+    font-weight: 800;
+    font-family: $tipoLetraPrimary;
+    width: 100%;
+    padding:1rem;
+    margin-bottom:10px;
+    border-radius: 15px;
+    background-color: $claro-color;
+    white-space: pre-wrap;
+}
+.contenedor{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.matbtn {
+    margin-top: 0.5rem;
+    border-radius: 2px;
+    font-family: $tipoLetraPrimary;
+    color: white;
+    background-color: $claroB;
+   
+  
+  }
+
+
+
+
+  
+  

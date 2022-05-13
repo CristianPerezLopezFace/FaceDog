@@ -1,0 +1,47 @@
+
+@import "../../../../node_modules/bootstrap/scss/mixins";
+@import "../../../../node_modules/bootstrap/scss/functions";
+@import "../../../../node_modules/bootstrap/scss/variables";
+
+@import "../../../assets/styles2.scss";
+
+@include media-breakpoint-down(md) {
+    .contenedor{
+        display:block !important;
+        
+     }
+
+
+}
+
+
+
+.contenedor{
+   display:flex;
+
+   justify-content: space-around;
+   
+}
+.scrollComen{
+   height: 25rem;
+}
+.imagen{
+    margin-top: 1rem;
+
+}
+
+.titulo{
+    font-family: $tipoLetraPrimary;
+    font-size: 1.5rem;
+    color:white;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    background-color: $claroB;
+    padding: 0.3rem;
+    border-radius: 10px;
+    border-bottom: 3px solid $oscuro;
+}
+h2{
+    font-family: $tipoLetraPrimary;
+    text-align: center;
+}

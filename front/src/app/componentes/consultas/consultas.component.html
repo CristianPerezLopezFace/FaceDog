@@ -1,0 +1,97 @@
+
+
+
+<div class="inicio">
+  <div class="divIzq">
+     
+      <div class="divIzq">
+        <img
+          src="{{srcFotoAnuncio}}"
+          class="card-img-top imgVeter"
+          contenteditable="imgCard"
+        />
+        <p class="card-text">
+          {{nombre}}
+      </p>
+      <p class="card-text">
+        {{descripcion}}
+      </p>
+      <a href="">Sitio web</a>
+        <div class="card-body">
+        
+          <div class="btns">
+              <div>
+                <app-veterinario></app-veterinario>
+              </div>
+              <div>
+                <app-subir-foto></app-subir-foto>
+              </div>
+              <div>
+    
+                <button
+                  class="button"
+                  mat-button
+                  [disableRipple]="true"  
+                  [ngClass]="botonClicado ===  'galeria' ? 'buttonSportsSelected' : ''"          
+                  (click)="mostrarGale()"
+                  >
+                    Galeria <mat-icon style="margin-left: 1rem; color: #214ea8;">collections</mat-icon>
+                </button>
+              </div>
+              <div>
+                
+                <button
+                class="button"
+                mat-button
+                [disableRipple]="true"
+                [ngClass]="botonClicado ===  'chat' ? 'buttonSportsSelected' : ''"          
+                (click)="activarChat()"
+                >
+                Chat	<mat-icon style="margin-left: 1rem; color: #214ea8;"> chat</mat-icon>
+              </button>
+              <button
+              class="button"
+              mat-button
+              [disableRipple]="true"  
+              [ngClass]="botonClicado ===  'galeria' ? 'buttonSportsSelected' : ''"          
+              (click)="inicio()"
+              >
+                Inicio <mat-icon style="margin-left: 1rem; color: #214ea8;">collections</mat-icon>
+            </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+    </div>
+
+    <div class="noticiasYchat">
+
+          <div class="centro">
+          
+            <div  *ngIf="abrirChat">
+            
+                
+              <app-noticias [consulta]="true" [veterinario]="true"></app-noticias>
+          
+          
+            </div>
+            <div class="noticiasSinChat " *ngIf="!abrirChat">
+            
+                <br /><br />
+                <app-noticias [consulta]="true" [veterinario]="true"></app-noticias>
+          
+            </div>
+          </div>
+          
+            <div class="chat " *ngIf="abrirChat">
+              <app-chat  [consulta]="true"></app-chat>
+            </div>
+  </div>
+
+</div>
+
+
+

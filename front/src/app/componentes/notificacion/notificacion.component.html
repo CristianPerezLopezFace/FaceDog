@@ -1,0 +1,103 @@
+
+
+<mat-dialog-content  class="mat-typography" >
+
+    <div class="titulo">
+  
+      <p  style="    text-transform: capitalize;">   {{dialog["notificaion"].name}}</p>
+      <p>
+      ha realizado {{dialog["notificaion"].tipo}}
+      </p>
+    
+    </div>
+  
+    <div class="contenedor" *ngIf="notificacion.tipo=='comentario en foto'">
+                    <div class="imagen">
+                      <img src="{{ srcFoto }}" alt="Photo of a Shiba Inu" />                   
+                      <div>
+                          <h2 class="dropdown-item">{{dialog["notificaion"].fecha | dateChange}}</h2>
+                  
+                      </div>
+                      <div>
+                            <h2>
+                              Responder
+                            </h2>
+                             
+                            <p>
+                              {{ foto.descripcion }}
+                            </p>
+                            <form class="example-form">
+                              <mat-form-field class="example-full-width" style="width: -webkit-fill-available;" appearance="fill">
+                                <mat-label>Comentario</mat-label>
+                                <input matInput type="text" name="value" [(ngModel)]="value" />
+  
+                                <button
+                                  matSuffix
+                                  mat-icon-button
+                                  aria-label="Clear"
+                                  (click)="comentar(foto.id, foto.email, foto); value = ''"
+                                >
+                                  <mat-icon>send</mat-icon>
+                                </button>
+                              </mat-form-field>
+                            </form>
+                      </div>
+                      
+                    </div>
+                    <div class="nav-item dropdown" *ngIf="foto != undefined">
+                                   
+                        <div
+                          *ngIf="foto.comentarios.length > 0"
+                          class="scrollComen"
+                          style="overflow: scroll; overflow-x: hidden"
+                        >
+                          <div *ngFor="let comentario of foto.comentarios; index as i">
+                            <app-comentario
+                              [comentario]="comentario"
+                              [idFoto]="foto.id"
+                            ></app-comentario>
+                          </div>
+                        </div>
+                      
+                    </div>
+     </div>
+  
+     <div class="contenedor" *ngIf="notificacion.tipo=='solicitud de amistad'">
+      <div class="imagen">
+        <img src="{{ srcFoto }}" alt="Photo of a Shiba Inu" />
+  
+     
+        <div>
+            <h2 class="dropdown-item">{{dialog["notificaion"].fecha | dateChange}}</h2>
+            <button mat-button  (click) = "aceptarPeticion()">Aceptar</button>
+            <button mat-button (click) = "rechazarPeticion()">Rechazar</button>
+        </div>
+        <div>
+            
+               
+  
+        </div>
+      </div>
+      
+      <div class="nav-item dropdown" *ngIf="amigo!=undefined">
+        <h2>
+          Responder
+        </h2>
+        <p>
+          {{amigo.name}}
+        </p>
+        <p>
+          {{amigo.surName}}
+        </p>
+        <p>
+          {{amigo.ciudad}}
+        </p>
+        <p>
+          {{amigo.descripcion}}
+        </p>
+      </div>
+
+  </div>
+
+  </mat-dialog-content>
+

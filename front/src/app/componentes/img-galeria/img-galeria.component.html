@@ -1,0 +1,66 @@
+
+<mat-dialog-content  class="mat-typography" >
+
+        <div class="contenido">
+                
+            
+            <div *ngIf="foto !=  undefined" class="foto">
+                        <img src="{{foto.foto}}">
+                        <div class="botones">
+                            <div>
+                                <button mat-button (click)="actualizar()">Actualizar</button>
+                            </div>
+                            <div>
+                                <button mat-button (click)="borrar()">Borrar</button>
+                            </div>
+                        </div>
+            </div>
+      
+            <div >
+                <div class="contenido">
+                    <div>
+                        <mat-icon>thumb_up</mat-icon>
+                    </div>
+                    <div>
+                        
+                        <h3>{{foto.likes.length}}</h3>
+                    </div>
+                    <div>
+                        <mat-icon>speaker_notes</mat-icon>
+                    </div>
+                    <div>
+                     
+                        <h3>{{foto.comentarios.length}}</h3>
+
+                    </div>
+                </div>
+                    <hr>
+                    <h3>{{foto.titulo}}</h3>
+                    <h3>{{foto.descripcion}}</h3>
+                    <h3 *ngIf="foto.principal==1">Imagen como principal</h3>
+
+                    <h3>Ultima modificacion: {{foto.fechaModificacion | dateChange}}</h3>
+        
+
+                <div>
+                    <mat-form-field appearance="legacy">
+                        <mat-label style="color: black;">Titulo</mat-label>
+                        <input matInput type="text" [(ngModel)]="titulo" />
+                      </mat-form-field>
+                    
+                </div>
+                <div>
+                    <mat-form-field appearance="legacy">
+                      <mat-label style="color:black;">Descripcion</mat-label>
+                      <input matInput type="text" [(ngModel)]="descrpcion"/>
+                    </mat-form-field>
+                      
+
+                </div>
+                
+            </div>
+            
+        </div>
+     
+
+  </mat-dialog-content>

@@ -1,0 +1,48 @@
+@import "../../../../node_modules/bootstrap/scss/mixins";
+@import "../../../../node_modules/bootstrap/scss/functions";
+@import "../../../../node_modules/bootstrap/scss/variables";
+@import "../../../assets/styles2.scss";
+.contenedor{
+    margin-top: 5rem;
+}
+.enviar{
+   background-color: rgb(54, 205, 28);
+   width: 12rem; 
+}
+.foter{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.foto{
+    background-color: aliceblue !important;
+    border-color: aliceblue !important;
+}
+.img{
+    width: 3rem !important;
+}
+
+
+
+    
+  
+    .button {
+      width: 100%;
+      display: inline;
+      text-overflow: ellipsis;
+      letter-spacing: 0.5px;
+  
+      &:hover {
+        background-color: rgba($claro-color, 0.2);
+        border-bottom: 3px solid black;
+        ::ng-deep .mat-button-wrapper {
+            color: $claroB;
+        }
+      }
+  
+    }
+  
+ 
+  
+  
+  

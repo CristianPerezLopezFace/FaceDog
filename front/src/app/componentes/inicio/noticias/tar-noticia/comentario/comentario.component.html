@@ -1,0 +1,35 @@
+<div class="contenedor" *ngIf="comentario.texto != null">
+  <div>
+    <h3 class="dropdown-item a">{{ comentario.nameUsuario }}</h3>
+  </div>
+  <div>
+    <h5 *ngIf="!ok" class="dropdown-item">{{ comentario.fecha }}</h5>
+    <h5 *ngIf="ok" class="dropdown-item">{{ comentario.fecha }}</h5>
+  </div>
+</div>
+<p
+*ngIf="comentario.likes.length == 0"
+  class="dropdown-item"
+>
+  {{ comentario.texto }}
+</p>
+
+<div *ngIf="comentario.likes.length > 0">
+  <p
+    class="dropdown-item"
+    style="background-color: rgb(180, 236, 180) !important"
+  >
+    {{ comentario.texto }}
+  </p>
+</div>
+<div *ngIf="comentario.likes.length === 0 && comentario.emailUsuario != email">
+  <button
+    mat_button
+    class="matbtn"
+    *ngIf="veterinario"
+    mat-button
+    (click)="likeComent(idFoto, comentario.emailUsuario)"
+  >
+    Te resulto de ayuda
+  </button>
+</div>

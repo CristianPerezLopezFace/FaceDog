@@ -1,0 +1,75 @@
+
+
+
+
+@import "../../../../node_modules/bootstrap/scss/mixins";
+@import "../../../../node_modules/bootstrap/scss/functions";
+@import "../../../../node_modules/bootstrap/scss/variables";
+@import "../../../assets/styles2.scss";
+
+
+@include media-breakpoint-down(lg){
+}
+
+
+.scroll{
+
+   height: 90vh;
+   margin-left: 4rem;
+   margin-right: 4rem;
+   width: 40%;
+}
+
+.example-card{
+   
+   border: solid 1px rgb(2,2,2,0.3);
+   border-radius: 3%;
+}
+
+.contenedor{
+     padding-top: 1rem;
+      display: flex;
+      background-color: rgb(167, 199, 226) !important;
+  }
+  .ampliado{
+     margin-top: 2rem;
+     width: 35rem;
+
+  }
+  .comentarios{
+      width: 30rem;
+  }
+  
+  
+
+.btnComent:hover {
+   background-color: $claro-color;
+ }
+ 
+ ::-webkit-scrollbar {
+   -webkit-appearance: none;
+ }
+ 
+ ::-webkit-scrollbar:vertical {
+   width: 5px;
+ }
+ 
+ ::-webkit-scrollbar-button:increment,
+ .contenedor::-webkit-scrollbar-button {
+   display: none;
+ }
+ 
+ ::-webkit-scrollbar:horizontal {
+   height: 0.5rem;
+ }
+ 
+ ::-webkit-scrollbar-thumb {
+   background-color: #797979;
+   border-radius: 20px;
+   border-right: 3px solid $bordes;
+ }
+ 
+ ::-webkit-scrollbar-track {
+   border-radius: 10px;
+ }
+ 

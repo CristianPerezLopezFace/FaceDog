@@ -1,0 +1,16 @@
+@import "../../../../node_modules/bootstrap/scss/mixins";
+@import "../../../../node_modules/bootstrap/scss/functions";
+@import "../../../../node_modules/bootstrap/scss/variables";
+@import "../../../assets/styles2.scss";
+
+@include media-breakpoint-down(md){
+
+        img{
+            width: 50vh !important;
+            height: 60vh !important;
+        }
+  }
+img{
+    width: 100vh;
+    height: 80vh;
+}

@@ -1,0 +1,40 @@
+<ng-template #content let-modal>
+         <br><br>
+          <div class="col-12 ">         
+                <img src="../../assets/fondoVeter.jpg" class="card-img-top" >
+
+         </div>
+    
+    <div class="modal-body">
+          <form class="row g-3" [formGroup]="contacForm">
+               
+                
+            
+                      <input type="text"  class="tex form-control" formControlName="tipourgencia" value="" placeholder="Tipo de urgencia ej herida">
+              
+               
+                      <input type="text" class="tex form-control" formControlName="descripcion" placeholder="Descripcion del caso">
+              
+                
+                    <input type="text" class="tex form-control" formControlName="fecha" placeholder="Hace cuanto sucedio?">
+                
+               
+                      <input style="color:black;" type="file" class="btn-primary form-control foto " formControlName="foto" placeholder="Agregar imagen" (change)="fileEvent($event)">
+             
+            
+              
+               
+             
+              </form>
+    </div>
+    <div class="modal-footer foter">
+       
+          <button mat-raised-button  class="button" (click)="addFoto()">Enviar</button>
+
+    </div>
+  </ng-template>
+  
+
+  
+    <button mat-button [disableRipple]="true" *ngIf="!anuncio" type="submit" class="button" (click)="open(content)">Veterinario 	<mat-icon style=" color: #214ea8;">  local_hospital</mat-icon></button>
+    <a mat-button [disableRipple]="true" *ngIf="anuncio" type="submit" class="button" href="https://www.clinicamiguelcabello.es/">Sitio web</a>

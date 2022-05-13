@@ -1,0 +1,35 @@
+
+<ng-template #content let-modal>
+      <div class="contenido">
+      
+          <div class="col-12" *ngIf="!veterinario">         
+                <img *ngIf="srcFotoSeleccionada.length > 5" src="{{srcFotoSeleccionada}}" class="card-img-top" alt="...">
+         </div>
+      <div class="modal-body">
+            <form class="row g-3" [formGroup]="contacForm">
+                 
+                 
+                        <input type="text"  class="tex form-control" formControlName="titulo" value="" placeholder="Titulo">
+               
+                        <input type="text" class="tex form-control" formControlName="descripcion" placeholder="Descripcion">
+                     
+                        <input type="file" class="btn-primary form-control foto" formControlName="foto" placeholder="Imagen" (change)="fileEvent($event)">
+                  
+                
+                 
+               
+                </form>
+      </div>
+      <div class="modal-footer foter">
+                 
+            <button type="submit" class="mat-button mb-3 button" (click)="addFoto()">Añadir</button>
+         
+
+      </div>
+</div>
+    </ng-template>
+
+      <button mat-button [disableRipple]="true" type="submit"  class="button" (click)="open(content)" *ngIf="!veterinario">Subir foto<mat-icon style="margin-left: 1rem; color: #214ea8;">add_a_photo</mat-icon></button>
+      <button mat-button [disableRipple]="true" class="button" (click)="open(content)" *ngIf="veterinario">Anunciate</button>
+
+      

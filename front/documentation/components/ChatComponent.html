@@ -1,0 +1,1705 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>face-dog documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">face-dog documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  ChatComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/componentes/chat/chat.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                    <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-chat</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./chat.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./chat.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_docSub" >_docSub</a>
+                            </li>
+                            <li>
+                                <a href="#closeResult" >closeResult</a>
+                            </li>
+                            <li>
+                                <a href="#contadorMenss" >contadorMenss</a>
+                            </li>
+                            <li>
+                                <a href="#currentDoc" >currentDoc</a>
+                            </li>
+                            <li>
+                                <a href="#document" >document</a>
+                            </li>
+                            <li>
+                                <a href="#documents" >documents</a>
+                            </li>
+                            <li>
+                                <a href="#email" >email</a>
+                            </li>
+                            <li>
+                                <a href="#repetir" >repetir</a>
+                            </li>
+                            <li>
+                                <a href="#textoMostrar" >textoMostrar</a>
+                            </li>
+                            <li>
+                                <a href="#token" >token</a>
+                            </li>
+                            <li>
+                                <a href="#usuariosConectados" >usuariosConectados</a>
+                            </li>
+                            <li>
+                                <a href="#value" >value</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#cargarDocumento" >cargarDocumento</a>
+                            </li>
+                            <li>
+                                <a href="#comprobarUserConectado" >comprobarUserConectado</a>
+                            </li>
+                            <li>
+                                <a href="#editDoc" >editDoc</a>
+                            </li>
+                            <li>
+                                <a href="#levantaTecla" >levantaTecla</a>
+                            </li>
+                            <li>
+                                <a href="#loadDoc" >loadDoc</a>
+                            </li>
+                            <li>
+                                <a href="#miMensaje" >miMensaje</a>
+                            </li>
+                            <li>
+                                <a href="#newDoc" >newDoc</a>
+                            </li>
+                            <li>
+                                <a href="#ngAfterViewInit" >ngAfterViewInit</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnDestroy" >ngOnDestroy</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#scroll" >scroll</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#consulta" >consulta</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(documentService: <a href="../injectables/DocumentServiceService.html" target="_self">DocumentServiceService</a>, jwt: JwtHelperService)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/componentes/chat/chat.component.ts:38</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>documentService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/DocumentServiceService.html" target="_self" >DocumentServiceService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>jwt</td>
+                                                  
+                                                        <td>
+                                                                    <code>JwtHelperService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="inputs">Inputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="consulta"></a>
+                        <b>consulta</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/componentes/chat/chat.component.ts:38</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="cargarDocumento"></a>
+                    <span class="name">
+                        <span ><b>cargarDocumento</b></span>
+                        <a href="#cargarDocumento"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>cargarDocumento()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="67"
+                            class="link-to-prism">src/app/componentes/chat/chat.component.ts:67</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="comprobarUserConectado"></a>
+                    <span class="name">
+                        <span ><b>comprobarUserConectado</b></span>
+                        <a href="#comprobarUserConectado"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>comprobarUserConectado(email: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="113"
+                            class="link-to-prism">src/app/componentes/chat/chat.component.ts:113</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>email</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="editDoc"></a>
+                    <span class="name">
+                        <span ><b>editDoc</b></span>
+                        <a href="#editDoc"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>editDoc()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="87"
+                            class="link-to-prism">src/app/componentes/chat/chat.component.ts:87</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="levantaTecla"></a>
+                    <span class="name">
+                        <span ><b>levantaTecla</b></span>
+                        <a href="#levantaTecla"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>levantaTecla(event: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="142"
+                            class="link-to-prism">src/app/componentes/chat/chat.component.ts:142</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loadDoc"></a>
+                    <span class="name">
+                        <span ><b>loadDoc</b></span>
+                        <a href="#loadDoc"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>loadDoc(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="108"
+                            class="link-to-prism">src/app/componentes/chat/chat.component.ts:108</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="miMensaje"></a>
+                    <span class="name">
+                        <span ><b>miMensaje</b></span>
+                        <a href="#miMensaje"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>miMensaje(email: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="47"
+                            class="link-to-prism">src/app/componentes/chat/chat.component.ts:47</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>email</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="newDoc"></a>
+                    <span class="name">
+                        <span ><b>newDoc</b></span>
+                        <a href="#newDoc"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>newDoc()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="121"
+                            class="link-to-prism">src/app/componentes/chat/chat.component.ts:121</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngAfterViewInit"></a>
+                    <span class="name">
+                        <span ><b>ngAfterViewInit</b></span>
+                        <a href="#ngAfterViewInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngAfterViewInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="46"
+                            class="link-to-prism">src/app/componentes/chat/chat.component.ts:46</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <span ><b>ngOnDestroy</b></span>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="104"
+                            class="link-to-prism">src/app/componentes/chat/chat.component.ts:104</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="50"
+                            class="link-to-prism">src/app/componentes/chat/chat.component.ts:50</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="scroll"></a>
+                    <span class="name">
+                        <span ><b>scroll</b></span>
+                        <a href="#scroll"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>scroll()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="148"
+                            class="link-to-prism">src/app/componentes/chat/chat.component.ts:148</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_docSub"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>_docSub</b></span>
+                        <a href="#_docSub"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Subscription</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/componentes/chat/chat.component.ts:23</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="closeResult"></a>
+                    <span class="name">
+                        <span ><b>closeResult</b></span>
+                        <a href="#closeResult"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/componentes/chat/chat.component.ts:34</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="contadorMenss"></a>
+                    <span class="name">
+                        <span ><b>contadorMenss</b></span>
+                        <a href="#contadorMenss"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>0</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/componentes/chat/chat.component.ts:32</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="currentDoc"></a>
+                    <span class="name">
+                        <span ><b>currentDoc</b></span>
+                        <a href="#currentDoc"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/componentes/chat/chat.component.ts:29</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="document"></a>
+                    <span class="name">
+                        <span ><b>document</b></span>
+                        <a href="#document"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Document.html" target="_self" >Document</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/componentes/chat/chat.component.ts:22</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="documents"></a>
+                    <span class="name">
+                        <span ><b>documents</b></span>
+                        <a href="#documents"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Observable&lt;&gt;</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/componentes/chat/chat.component.ts:28</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="email"></a>
+                    <span class="name">
+                        <span ><b>email</b></span>
+                        <a href="#email"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>this.jwt.decodeToken(localStorage.getItem(&#x27;token&#x27;)!).sub.email</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/componentes/chat/chat.component.ts:30</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="repetir"></a>
+                    <span class="name">
+                        <span ><b>repetir</b></span>
+                        <a href="#repetir"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/componentes/chat/chat.component.ts:33</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="textoMostrar"></a>
+                    <span class="name">
+                        <span ><b>textoMostrar</b></span>
+                        <a href="#textoMostrar"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/componentes/chat/chat.component.ts:27</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="token"></a>
+                    <span class="name">
+                        <span ><b>token</b></span>
+                        <a href="#token"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>this.jwt.decodeToken(localStorage.getItem(&#x27;token&#x27;)!).sub.email</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/componentes/chat/chat.component.ts:24</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="usuariosConectados"></a>
+                    <span class="name">
+                        <span ><b>usuariosConectados</b></span>
+                        <a href="#usuariosConectados"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/componentes/chat/chat.component.ts:36</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="value"></a>
+                    <span class="name">
+                        <span ><b>value</b></span>
+                        <a href="#value"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/componentes/chat/chat.component.ts:26</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {
+  Component,
+  OnInit,
+  OnDestroy,
+  ViewChild,
+  ElementRef,
+  HostListener,
+  Input,
+} from &#x27;@angular/core&#x27;;
+import { Observable, Subscription } from &#x27;rxjs&#x27;;
+import { DocumentServiceService } from &#x27;../../servicios/documentService.service&#x27;;
+import { startWith } from &#x27;rxjs/operators&#x27;;
+import { Document, Doc } from &#x27;../../clases/Documento&#x27;;
+import { JwtHelperService } from &#x27;@auth0/angular-jwt&#x27;;
+
+@Component({
+  selector: &#x27;app-chat&#x27;,
+  templateUrl: &#x27;./chat.component.html&#x27;,
+  styleUrls: [&#x27;./chat.component.scss&#x27;],
+})
+export class ChatComponent implements OnInit, OnDestroy {
+  document!: Document;
+  private _docSub!: Subscription;
+  token &#x3D; this.jwt.decodeToken(localStorage.getItem(&#x27;token&#x27;)!).sub.email;
+
+  value: string &#x3D; &#x27;&#x27;;
+  textoMostrar &#x3D; &#x27;&#x27;;
+  documents!: Observable&lt;[]&gt;;
+  currentDoc!: string;
+  email &#x3D; this.jwt.decodeToken(localStorage.getItem(&#x27;token&#x27;)!).sub.email;
+
+  contadorMenss &#x3D; 0;
+  repetir &#x3D; true;
+  closeResult &#x3D; &#x27;&#x27;;
+
+  usuariosConectados&#x3D;[]
+  @Input()
+  consulta!: boolean;
+
+  constructor(
+    private documentService: DocumentServiceService,
+    private jwt: JwtHelperService
+  ) {}
+  // @ViewChild(&#x27;chat&#x27;) element: ElementRef | undefined;
+
+  ngAfterViewInit() {}
+  miMensaje(email: string) {
+    return this.email &#x3D;&#x3D; email ? true : false;
+  }
+  ngOnInit() {
+    this.cargarDocumento();
+    this.contadorMenss &#x3D; this.document.doc.length;
+
+    this.newDoc();
+    // if (this.consulta) {
+    //   this.loadDoc(&#x27;chat consultas&#x27;);
+    // } else {
+    //   this.loadDoc(&#x27;chat global&#x27;);
+    // }
+    this.loadDoc(&#x27;chat&#x27;);
+
+    setTimeout(() &#x3D;&gt; {this.scroll()}, 100);
+   
+
+  }
+
+  cargarDocumento() {
+    this.token &#x3D; this.jwt.decodeToken(localStorage.getItem(&#x27;token&#x27;)!).sub.email;
+    let name: string &#x3D; this.jwt.decodeToken(localStorage.getItem(&#x27;token&#x27;)!).sub
+      .name;
+
+    let listaDoc: Doc[] &#x3D; [];
+    let docu &#x3D; new Doc(
+      name,
+      &#x27;Selecciona un chat o crea uno nuevo&#x27;,
+      new Date(),
+      this.email
+    );
+    listaDoc.push(docu);
+    this._docSub &#x3D; this.documentService.currentDocument
+      .pipe(startWith(new Document(name, listaDoc, this.token, [])))
+      .subscribe((document) &#x3D;&gt; {
+        this.document &#x3D; document;
+      });
+  }
+
+  editDoc() {
+    let name: string &#x3D; this.jwt.decodeToken(localStorage.getItem(&#x27;token&#x27;)!).sub
+      .name;
+    let frase &#x3D; this.value;
+
+    if(this.consulta){
+      let doc &#x3D; new Doc(name, frase, new Date(), this.email);
+      this.document.chatVeterinario.push(doc)
+    }else{
+      let doc &#x3D; new Doc(name, frase, new Date(), this.email);
+      this.document.doc.push(doc);
+
+    }
+    this.documentService.editDocument(this.document);
+    this.value &#x3D; &#x27;&#x27;;
+    setTimeout(() &#x3D;&gt; this.scroll(), 100);
+  }
+  ngOnDestroy() {
+    
+  }
+
+  loadDoc(id: string) {
+    this.documentService.getDocument(id);
+  }
+    
+
+  comprobarUserConectado(email:string){
+      // let conect &#x3D; false
+      // if(this.document.chatVeterinario.find(userEmail &#x3D;&gt; userEmail &#x3D; email)) {
+      //     conect &#x3D;true
+      // }
+      // return conect
+  }
+
+  newDoc() {
+    let nameUser &#x3D; this.jwt.decodeToken(localStorage.getItem(&#x27;token&#x27;)!).sub
+      .name;
+    let email &#x3D; this.jwt.decodeToken(localStorage.getItem(&#x27;token&#x27;)!).sub.email;
+    let token &#x3D; this.jwt.decodeToken(localStorage.getItem(&#x27;token&#x27;)!);
+    let chatVeter:Doc[]&#x3D;[]
+    
+    let doc &#x3D; new Doc(&#x27;&#x27;, &#x27;&#x27;, new Date(), email);
+    let docs: Doc[] &#x3D; [];
+    docs.push(doc);
+    let document;
+
+    // if (this.consulta) {
+    //   document &#x3D; new Document(&#x27;chat consultas&#x27;, docs, token, chatVeter);
+    // } else {
+    //   document &#x3D; new Document(&#x27;chat global&#x27;, docs, token, chatVeter);
+    // }
+   document &#x3D; new Document(&#x27;chat&#x27;, docs, token, chatVeter);
+
+    this.documentService.newDocument(document);
+  }
+  levantaTecla(event: any) {
+    if (event.keyCode &#x3D;&#x3D; 13) {
+      this.editDoc();
+      setTimeout(() &#x3D;&gt; this.scroll(), 100);
+    }
+  }
+  scroll() {
+    let contenedorChat &#x3D; document.getElementsByName(&#x27;tarjet&#x27;)[0];
+    contenedorChat.scrollTop &#x3D; contenedorChat.scrollHeight;
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">
+  &lt;div class&#x3D;&quot;contenedorChat&quot; name&#x3D;&quot;tarjet&quot;*ngIf&#x3D;&quot;!consulta&quot;&gt;
+    &lt;div *ngFor&#x3D;&quot;let doc of document.doc; index as i&quot; class&#x3D;&quot;anchoChat&quot;&gt; 
+      &lt;div class&#x3D;&quot;flexFrase&quot;&gt;
+        &lt;div class&#x3D;&quot;frase&quot; *ngIf&#x3D;&quot;!miMensaje(doc.email)&quot;&gt;
+          &lt;div class&#x3D;&quot;nomYfecha&quot;&gt;
+                &lt;div&gt;
+                  &lt;p &gt; &lt;mat-icon  *ngIf&#x3D;&quot;comprobarUserConectado(doc.email)&quot; style&#x3D;&quot;color: rgb(0, 246, 29); font-size: 1rem;&quot;&gt;account_circle&lt;/mat-icon&gt; {{ doc.name }} &amp;nbsp; &lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div&gt;
+                  &lt;p&gt; {{doc.fecha | dateChange }}&lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              {{ doc.doc }}
+          &lt;/div&gt;
+      &lt;/div&gt;     
+      &lt;div class&#x3D;&quot;flexMiFrase&quot;&gt;
+        &lt;div class&#x3D;&quot;Mifrase&quot; *ngIf&#x3D;&quot;miMensaje(doc.email)&quot;&gt;
+          &lt;p &gt;{{doc.fecha | dateChange }}&lt;/p&gt;
+          {{ doc.doc }}
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
+  &lt;div class&#x3D;&quot;contenedorChat&quot; name&#x3D;&quot;tarjet&quot; *ngIf&#x3D;&quot;consulta&quot;&gt;
+    &lt;div *ngFor&#x3D;&quot;let doc of document.chatVeterinario; index as i&quot; class&#x3D;&quot;anchoChat&quot;&gt; 
+      &lt;div class&#x3D;&quot;flexFrase&quot;&gt;
+        &lt;div class&#x3D;&quot;frase&quot; *ngIf&#x3D;&quot;!miMensaje(doc.email)&quot;&gt;
+          &lt;div class&#x3D;&quot;nomYfecha&quot;&gt;
+                &lt;div&gt;
+                  &lt;p &gt; &lt;mat-icon  *ngIf&#x3D;&quot;comprobarUserConectado(doc.email)&quot; style&#x3D;&quot;color: rgb(0, 246, 29); font-size: 1rem;&quot;&gt;account_circle&lt;/mat-icon&gt; {{ doc.name }} &amp;nbsp; &lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div&gt;
+                  &lt;p&gt; {{doc.fecha | dateChange }}&lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              {{ doc.doc }}
+          &lt;/div&gt;
+      &lt;/div&gt;     
+      &lt;div class&#x3D;&quot;flexMiFrase&quot;&gt;
+        &lt;div class&#x3D;&quot;Mifrase&quot; *ngIf&#x3D;&quot;miMensaje(doc.email)&quot;&gt;
+          &lt;p &gt;{{doc.fecha | dateChange }}&lt;/p&gt;
+          {{ doc.doc }}
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;icono&quot;&gt;
+   
+   &lt;/div&gt;
+   
+  &lt;mat-form-field
+  
+    appearance&#x3D;&quot;fill&quot;
+    class&#x3D;&quot;input&quot;
+    style&#x3D;&quot;
+      background-color: rgb(255, 255, 255);
+      border-radius: 15px;
+      width: 100%;
+      height: 4rem;
+      padding-left: 1rem;
+
+    &quot;
+  &gt;
+    &lt;mat-label&gt;Clearable input&lt;/mat-label&gt;
+
+    &lt;input matInput  (keydown)&#x3D;&quot;levantaTecla($event)&quot;  type&#x3D;&quot;text&quot; [(ngModel)]&#x3D;&quot;value&quot;  /&gt;
+
+    &lt;button
+      *ngIf&#x3D;&quot;value&quot;
+      matSuffix
+      mat-icon-button
+      aria-label&#x3D;&quot;Clear&quot;
+      (click)&#x3D;&quot;value &#x3D; &#x27;&#x27;&quot;
+    &gt;
+      &lt;mat-icon&gt;close&lt;/mat-icon&gt;
+    &lt;/button&gt;
+    &lt;button
+      
+      *ngIf&#x3D;&quot;value&quot;
+      matSuffix
+      mat-icon-button
+      aria-label&#x3D;&quot;Clear&quot;
+      (click)&#x3D;&quot;editDoc()&quot;
+     
+
+    &gt;
+      &lt;mat-icon&gt;send&lt;/mat-icon&gt;
+    &lt;/button&gt;
+  &lt;/mat-form-field&gt;
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./chat.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@import &quot;../../../../node_modules/bootstrap/scss/mixins&quot;;
+@import &quot;../../../../node_modules/bootstrap/scss/functions&quot;;
+@import &quot;../../../../node_modules/bootstrap/scss/variables&quot;;
+@import &quot;../../../assets/styles2.scss&quot;;
+
+@include media-breakpoint-down(sm) {
+  .contenedorChat{
+
+    width: 100vh !important;
+    
+  }
+}
+  .contenedorChat{
+    height:78vh;
+    overflow:scroll; 
+    padding-left: 1rem;
+    width: 60vh;
+    
+  }
+  p{
+    font-size: 0.8rem;
+    color: rgb(0,0,0,0.5);
+    text-transform: capitalize;
+
+  }
+  .nomYfecha{
+    display: flex;
+    justify-content: space-between;
+  }
+.anchoChat{
+ 
+
+}
+  .frase{
+    font-size:  1rem;
+    font-weight: 600;
+    font-family: $tipoLetraPrimary;
+    width: fit-content;
+    padding:0.3rem 0.8rem;
+    margin-bottom:10px;
+    border-radius: 8px;
+    background-color: $claro-color;
+    max-width: 30rem;
+}
+.flexMiFrase{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.Mifrase{
+  font-size:  1.2rem;
+  font-weight: 600;
+  font-family: $tipoLetraPrimary;
+  width: fit-content;
+  padding:0.3rem 0.8rem;
+  margin-bottom:10px;
+  border-radius: 8px;
+  background-color: $claroA;
+  text-align: end;
+  max-width: 30rem;
+}
+h1{
+  margin-top: 1rem;
+ 
+  background-color: $claro-color;
+  border-radius: 60px;
+  width: auto;
+  
+}
+
+
+
+.icono{
+  display: flex;
+  place-content: flex;
+  p{
+    font-size: 1.7rem;
+  }
+  
+}
+
+
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+::-webkit-scrollbar:vertical {
+  width: 5px;
+}
+
+::-webkit-scrollbar-button:increment,
+.contenedor::-webkit-scrollbar-button {
+  display: none;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #797979;
+  border-radius: 20px;
+  border: 2px solid #f1f2f3;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+// @include media-breakpoint-down(md) {
+        
+//   .contenedor{
+//     display: block;
+//   }     
+//   input{
+    
+//     border-radius: 15px;
+//   }
+  
+          
+// }</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div>  <div class="contenedorChat" name="tarjet"*ngIf="!consulta">    <div *ngFor="let doc of document.doc; index as i" class="anchoChat">       <div class="flexFrase">        <div class="frase" *ngIf="!miMensaje(doc.email)">          <div class="nomYfecha">                <div>                  <p > <mat-icon  *ngIf="comprobarUserConectado(doc.email)" style="color: rgb(0, 246, 29); font-size: 1rem;">account_circle</mat-icon> {{ doc.name }} &nbsp; </p>                </div>                <div>                  <p> {{doc.fecha | dateChange }}</p>                </div>              </div>              {{ doc.doc }}          </div>      </div>           <div class="flexMiFrase">        <div class="Mifrase" *ngIf="miMensaje(doc.email)">          <p >{{doc.fecha | dateChange }}</p>          {{ doc.doc }}        </div>      </div>    </div>  </div>    <div class="contenedorChat" name="tarjet" *ngIf="consulta">    <div *ngFor="let doc of document.chatVeterinario; index as i" class="anchoChat">       <div class="flexFrase">        <div class="frase" *ngIf="!miMensaje(doc.email)">          <div class="nomYfecha">                <div>                  <p > <mat-icon  *ngIf="comprobarUserConectado(doc.email)" style="color: rgb(0, 246, 29); font-size: 1rem;">account_circle</mat-icon> {{ doc.name }} &nbsp; </p>                </div>                <div>                  <p> {{doc.fecha | dateChange }}</p>                </div>              </div>              {{ doc.doc }}          </div>      </div>           <div class="flexMiFrase">        <div class="Mifrase" *ngIf="miMensaje(doc.email)">          <p >{{doc.fecha | dateChange }}</p>          {{ doc.doc }}        </div>      </div>    </div>  </div>  <div class="icono">      </div>     <mat-form-field      appearance="fill"    class="input"    style="      background-color: rgb(255, 255, 255);      border-radius: 15px;      width: 100%;      height: 4rem;      padding-left: 1rem;    "  >    <mat-label>Clearable input</mat-label>    <input matInput  (keydown)="levantaTecla($event)"  type="text" [(ngModel)]="value"  />    <button      *ngIf="value"      matSuffix      mat-icon-button      aria-label="Clear"      (click)="value = \'\'"    >      <mat-icon>close</mat-icon>    </button>    <button            *ngIf="value"      matSuffix      mat-icon-button      aria-label="Clear"      (click)="editDoc()"         >      <mat-icon>send</mat-icon>    </button>  </mat-form-field></div>'
+    var COMPONENTS = [{'name': 'ActualizarUserComponent', 'selector': 'app-actualizar-user'},{'name': 'AmigosComponent', 'selector': 'app-amigos'},{'name': 'AministracionComponent', 'selector': 'app-aministracion'},{'name': 'AmpliarFotoComponent', 'selector': 'app-ampliar-foto'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ChatComponent', 'selector': 'app-chat'},{'name': 'ComentarioComponent', 'selector': 'app-comentario'},{'name': 'GaleriaComponent', 'selector': 'app-galeria'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'ImgGaleriaComponent', 'selector': 'app-img-galeria'},{'name': 'InicioComponent', 'selector': 'app-inicio'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MenuNavComponent', 'selector': 'app-menu-nav'},{'name': 'NoticiasComponent', 'selector': 'app-noticias'},{'name': 'NotificacionComponent', 'selector': 'app-notificacion'},{'name': 'ParquesComponent', 'selector': 'app-consultas'},{'name': 'PerfilAmigoComponent', 'selector': 'app-perfil-amigo'},{'name': 'PerfilComponent', 'selector': 'app-perfil'},{'name': 'ProgressSpinnerComponent', 'selector': 'app-progress-spinner'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'SubirFotoComponent', 'selector': 'app-subir-foto'},{'name': 'TarNoticiaComponent', 'selector': 'app-tar-noticia'},{'name': 'VeterinarioComponent', 'selector': 'app-veterinario'},{'name': 'VistaVeterinarioComponent', 'selector': 'app-vista-veterinario'},{'name': 'ZonasComponent', 'selector': 'app-zonas'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'ChatComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'ChatComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,95 @@
+
+  <div class="contenedorChat" name="tarjet"*ngIf="!consulta">
+    <div *ngFor="let doc of document.doc; index as i" class="anchoChat"> 
+      <div class="flexFrase">
+        <div class="frase" *ngIf="!miMensaje(doc.email)">
+          <div class="nomYfecha">
+                <div>
+                  <p > <mat-icon  *ngIf="comprobarUserConectado(doc.email)" style="color: rgb(0, 246, 29); font-size: 1rem;">account_circle</mat-icon> {{ doc.name }} &nbsp; </p>
+                </div>
+                <div>
+                  <p> {{doc.fecha | dateChange }}</p>
+                </div>
+              </div>
+              {{ doc.doc }}
+          </div>
+      </div>     
+      <div class="flexMiFrase">
+        <div class="Mifrase" *ngIf="miMensaje(doc.email)">
+          <p >{{doc.fecha | dateChange }}</p>
+          {{ doc.doc }}
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="contenedorChat" name="tarjet" *ngIf="consulta">
+    <div *ngFor="let doc of document.chatVeterinario; index as i" class="anchoChat"> 
+      <div class="flexFrase">
+        <div class="frase" *ngIf="!miMensaje(doc.email)">
+          <div class="nomYfecha">
+                <div>
+                  <p > <mat-icon  *ngIf="comprobarUserConectado(doc.email)" style="color: rgb(0, 246, 29); font-size: 1rem;">account_circle</mat-icon> {{ doc.name }} &nbsp; </p>
+                </div>
+                <div>
+                  <p> {{doc.fecha | dateChange }}</p>
+                </div>
+              </div>
+              {{ doc.doc }}
+          </div>
+      </div>     
+      <div class="flexMiFrase">
+        <div class="Mifrase" *ngIf="miMensaje(doc.email)">
+          <p >{{doc.fecha | dateChange }}</p>
+          {{ doc.doc }}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="icono">
+   
+   </div>
+   <div class="input">
+
+     <mat-form-field
+     
+    appearance="fill"
+    class="input"
+    style="
+      background-color: rgb(255, 255, 255);
+      border-radius: 15px;
+      width: 100%;
+      height: 4rem;
+      padding-left: 1rem;
+
+    "
+  >
+    <mat-label>Clearable input</mat-label>
+
+    <input matInput  (keydown)="levantaTecla($event)"  type="text" [(ngModel)]="value"  />
+
+    <button
+    *ngIf="value"
+      matSuffix
+      mat-icon-button
+      aria-label="Clear"
+      (click)="value = ''"
+      >
+      <mat-icon>close</mat-icon>
+    </button>
+    <button
+      
+      *ngIf="value"
+      matSuffix
+      mat-icon-button
+      aria-label="Clear"
+      (click)="editDoc()"
+      
+      
+      >
+      <mat-icon>send</mat-icon>
+    </button>
+  </mat-form-field>
+  
+</div>
+  

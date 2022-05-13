@@ -1,0 +1,827 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>face-dog documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">face-dog documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  GaleriaComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/componentes/galeria/galeria.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-galeria</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./galeria.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./galeria.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#allImg" >allImg</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#dialog" >dialog</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#getAllImageUser" >getAllImageUser</a>
+                            </li>
+                            <li>
+                                <a href="#imagenPrincipal" >imagenPrincipal</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#openDialog" >openDialog</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(message: <a href="../injectables/MessageService.html" target="_self">MessageService</a>, jwt: JwtHelperService, servicioUsuario: <a href="../injectables/UsuriosService.html" target="_self">UsuriosService</a>, dialog: MatDialog, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, userRegisterService: <a href="../injectables/UserRegisterService.html" target="_self">UserRegisterService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/componentes/galeria/galeria.component.ts:17</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>message</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/MessageService.html" target="_self" >MessageService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>jwt</td>
+                                                  
+                                                        <td>
+                                                                    <code>JwtHelperService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>servicioUsuario</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UsuriosService.html" target="_self" >UsuriosService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dialog</td>
+                                                  
+                                                        <td>
+                                                                    <code>MatDialog</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>userRegisterService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UserRegisterService.html" target="_self" >UserRegisterService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getAllImageUser"></a>
+                    <span class="name">
+                        <span ><b>getAllImageUser</b></span>
+                        <a href="#getAllImageUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getAllImageUser()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="29"
+                            class="link-to-prism">src/app/componentes/galeria/galeria.component.ts:29</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="imagenPrincipal"></a>
+                    <span class="name">
+                        <span ><b>imagenPrincipal</b></span>
+                        <a href="#imagenPrincipal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>imagenPrincipal(img: <a href="../classes/Foto.html" target="_self">Foto</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="54"
+                            class="link-to-prism">src/app/componentes/galeria/galeria.component.ts:54</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>img</td>
+                                    <td>
+                                                <code><a href="../classes/Foto.html" target="_self" >Foto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="22"
+                            class="link-to-prism">src/app/componentes/galeria/galeria.component.ts:22</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openDialog"></a>
+                    <span class="name">
+                        <span ><b>openDialog</b></span>
+                        <a href="#openDialog"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>openDialog(foto: <a href="../classes/Foto.html" target="_self">Foto</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="39"
+                            class="link-to-prism">src/app/componentes/galeria/galeria.component.ts:39</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>foto</td>
+                                    <td>
+                                                <code><a href="../classes/Foto.html" target="_self" >Foto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="allImg"></a>
+                    <span class="name">
+                        <span ><b>allImg</b></span>
+                        <a href="#allImg"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Foto.html" target="_self" >Foto[]</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/componentes/galeria/galeria.component.ts:17</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dialog"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>dialog</b></span>
+                        <a href="#dialog"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>MatDialog</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/componentes/galeria/galeria.component.ts:19</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { MatDialog } from &#x27;@angular/material/dialog&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+import { JwtHelperService } from &#x27;@auth0/angular-jwt&#x27;;
+import { Foto } from &#x27;src/app/clases/foto&#x27;;
+import { MessageService } from &#x27;src/app/servicios/message.service&#x27;;
+import { UserRegisterService } from &#x27;src/app/servicios/user-register.service&#x27;;
+import { UsuriosService } from &#x27;src/app/servicios/usurios.service&#x27;;
+import { ImgGaleriaComponent } from &#x27;../img-galeria/img-galeria.component&#x27;;
+
+@Component({
+  selector: &#x27;app-galeria&#x27;,
+  templateUrl: &#x27;./galeria.component.html&#x27;,
+  styleUrls: [&#x27;./galeria.component.scss&#x27;]
+})
+export class GaleriaComponent implements OnInit {
+  allImg:Foto[] &#x3D; []
+  constructor(    private message: MessageService,
+    private jwt:JwtHelperService,private servicioUsuario:UsuriosService,public dialog: MatDialog,private router:Router,
+    private userRegisterService:UserRegisterService,) { }
+
+  ngOnInit(): void {
+    this.getAllImageUser()
+    if(this.userRegisterService.tokenExpired(localStorage.getItem(&quot;token&quot;)!)){
+
+      
+    }
+  }
+  getAllImageUser() {
+    let nameEmail &#x3D; this.jwt.decodeToken(localStorage.getItem(&#x27;token&#x27;)!).sub
+      .email;
+
+    this.allImg &#x3D; [];
+    this.servicioUsuario.getAllImg(nameEmail).subscribe((data) &#x3D;&gt; {
+      data.forEach((e) &#x3D;&gt; this.allImg.push(e));
+    
+    });
+  }
+  openDialog(foto: Foto) {
+    const dialogRef &#x3D; this.dialog.open(ImgGaleriaComponent, {
+      width: &#x27;700px&#x27;,
+      height: &#x27;400px&#x27;,
+      data: {
+        fotoData: foto,
+      },
+    });
+
+    dialogRef.afterClosed().subscribe((result:any) &#x3D;&gt; {
+    this.allImg&#x3D;[]
+     this.getAllImageUser()
+    });
+  }
+
+  imagenPrincipal(img:Foto) {
+  
+    this.servicioUsuario.updatePrincipalImg(img).subscribe((e) &#x3D;&gt; {
+        this.message.createMessage(&quot;foto actualizada correctamente&quot;)
+    });
+  }
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;fotos col-12&quot;&gt;
+    &lt;div class&#x3D;&quot;row&quot;&gt;
+  
+  
+      &lt;div     *ngFor&#x3D;&quot;let img of allImg; let indice &#x3D; index&quot;
+            class&#x3D;&quot;todasFotos col-lg-2 col-md-12&quot;
+            style&#x3D;&quot;width: fit-content;&quot;&gt;
+            
+                
+                &lt;img (click)&#x3D;&quot;openDialog(img)&quot; src&#x3D;&quot;{{ img.foto }}&quot; class&#x3D;&quot;imgGaleria&quot;/&gt;
+                &lt;button
+                class&#x3D;&quot;button&quot;
+                mat-button
+                [disableRipple]&#x3D;&quot;true&quot;
+                (click) &#x3D; &quot;imagenPrincipal(img)&quot;
+            
+                &gt;
+                Principal
+              &lt;/button&gt;
+            &lt;/div&gt;
+  
+    
+    &lt;/div&gt;
+  
+  &lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./galeria.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">
+@import &quot;../../../../node_modules/bootstrap/scss/mixins&quot;;
+@import &quot;../../../../node_modules/bootstrap/scss/functions&quot;;
+@import &quot;../../../../node_modules/bootstrap/scss/variables&quot;;
+@import &quot;../../../assets/styles2.scss&quot;;
+
+
+.fotos{
+    display: flex;
+  
+    justify-content: space-around;
+    .todasFotos{
+       min-width: max-content;
+       margin: 1rem;
+  
+      .imgGaleria{
+        width: 10rem;
+        height: 10rem;
+        border: solid 3px $claroC;
+        border-radius: 6px;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    
+       
+      }
+    }
+  
+  }
+  .button {
+    width: 100%;
+    display: inline;
+    text-overflow: ellipsis;
+    letter-spacing: 0.5px;
+  
+    &amp;:hover {
+      background-color: rgba($claro-color, 0.2);
+      border-bottom: 3px solid black;
+      ::ng-deep .mat-button-wrapper {
+          color: $claroB;
+      }
+    }
+  
+  }
+  mat-icon {
+    margin-right: 1rem !important;
+  }</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="fotos col-12">    <div class="row">          <div     *ngFor="let img of allImg; let indice = index"            class="todasFotos col-lg-2 col-md-12"            style="width: fit-content;">                                            <img (click)="openDialog(img)" src="{{ img.foto }}" class="imgGaleria"/>                <button                class="button"                mat-button                [disableRipple]="true"                (click) = "imagenPrincipal(img)"                            >                Principal              </button>            </div>          </div>    </div></div>'
+    var COMPONENTS = [{'name': 'ActualizarUserComponent', 'selector': 'app-actualizar-user'},{'name': 'AmigosComponent', 'selector': 'app-amigos'},{'name': 'AministracionComponent', 'selector': 'app-aministracion'},{'name': 'AmpliarFotoComponent', 'selector': 'app-ampliar-foto'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ChatComponent', 'selector': 'app-chat'},{'name': 'ComentarioComponent', 'selector': 'app-comentario'},{'name': 'GaleriaComponent', 'selector': 'app-galeria'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'ImgGaleriaComponent', 'selector': 'app-img-galeria'},{'name': 'InicioComponent', 'selector': 'app-inicio'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MenuNavComponent', 'selector': 'app-menu-nav'},{'name': 'NoticiasComponent', 'selector': 'app-noticias'},{'name': 'NotificacionComponent', 'selector': 'app-notificacion'},{'name': 'ParquesComponent', 'selector': 'app-consultas'},{'name': 'PerfilAmigoComponent', 'selector': 'app-perfil-amigo'},{'name': 'PerfilComponent', 'selector': 'app-perfil'},{'name': 'ProgressSpinnerComponent', 'selector': 'app-progress-spinner'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'SubirFotoComponent', 'selector': 'app-subir-foto'},{'name': 'TarNoticiaComponent', 'selector': 'app-tar-noticia'},{'name': 'VeterinarioComponent', 'selector': 'app-veterinario'},{'name': 'VistaVeterinarioComponent', 'selector': 'app-vista-veterinario'},{'name': 'ZonasComponent', 'selector': 'app-zonas'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'GaleriaComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'GaleriaComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

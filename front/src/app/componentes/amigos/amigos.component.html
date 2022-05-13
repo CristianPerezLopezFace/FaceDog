@@ -1,0 +1,29 @@
+
+
+      <div class="d-flex botones">
+        <button class="mat-button button " type="submit" (click)="getAllUsers()">Todos</button>
+        <button class="mat-button button " type="submit" (click)="getAmigos()">Conocidos</button>
+       
+      </div>
+   
+<div class="flex">
+
+  <div class="row" *ngFor="let amigo of amigos">
+    <div class="foto col-sm-10 col-md-6 col-lg-4">
+      <img src={{amigo.foto}} class="card-img-top" alt="...">
+    </div>
+    <div class="botones" style="width: 5rem;" >
+      <div class="card-body">
+        <h5 class="card-title">Nombre: {{amigo.name}}</h5>
+      </div>
+      <ul class="list-group list-group-flush">
+        <p class="list-group-item">Ciudad: {{amigo.ciudad}}</p>
+      </ul>
+      <div class="card-body ">
+        <button type="submit" class="mat-button  button" *ngIf="sonAmigos" (click)="verPerfil(amigo.id_fotos)">Perfil</button>
+        <button type="submit" class="mat-button  button" *ngIf="!sonAmigos" (click)="solicitarAmistad(amigo.id_fotos)"><mat-icon>person_add</mat-icon></button>
+      </div>
+    </div>
+    <br>
+  </div>
+</div>

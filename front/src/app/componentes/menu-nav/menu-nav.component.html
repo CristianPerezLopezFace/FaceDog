@@ -1,0 +1,56 @@
+
+
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+        <button mat-button class="navbar-brand" (click)="inicio()">	<mat-icon>home</mat-icon>{{nombreUsuario}} </button>
+   
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" style="    justify-content: space-around;    " id="navbarNav">
+      
+        <div  class="nav-item active">
+          
+            <button mat-button color="accent" (click)="amigos()" *ngIf="rol == 'Usuario'"><mat-icon style="color: #214ea8;">group</mat-icon></button>
+            
+        </div>
+        <div  class="nav-item">
+          <button mat-button style="color: #214ea8;" (click)="zonas()" *ngIf="rol == 'Usuario'">Zonas</button >
+
+        </div>
+        <div class="nav-item">
+          <button mat-button style="color: #214ea8;" (click)="consultas()"  *ngIf="rol == 'Usuario'">Consultas</button>
+          <div *ngIf="rol == 'Veterinario'">
+            <app-subir-foto
+            [veterinario]=true
+            ></app-subir-foto>
+          </div>
+        </div>
+      
+               
+        <div class="nav-item dropdown"  *ngIf="rol == 'Usuario'">
+          <button *ngIf="notificaciones.length==0" mat-button  class="dropdown-toggle " data-bs-toggle="dropdown" role="button" aria-expanded="false">
+            <mat-icon style="color: #214ea8;">notifications</mat-icon> {{notificaciones.length}}
+          </button>
+          <button *ngIf="notificaciones.length>0" mat-button  style="color: #214ea8;" class="dropdown-toggle " data-bs-toggle="dropdown" role="button" aria-expanded="false">
+            <mat-icon style="color: #214ea8;">notifications_active</mat-icon>{{notificaciones.length}}
+          </button>
+          <div class="dropdown-menu desplegableNotif" >
+            <div *ngFor="let noti of notificaciones">
+              <button class="notificacion" (click)="openDialog(noti)">{{noti.tipo}} de {{noti.name}}</button>
+
+            </div>
+            
+          </div>
+        </div>
+        
+      
+       
+    
+    
+    </div>
+  </div>
+  <button  mat-button class="nav-link" (click)="logout()"><mat-icon>exit_to_app</mat-icon></button>
+  </nav>
+  

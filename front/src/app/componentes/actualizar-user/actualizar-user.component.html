@@ -1,0 +1,33 @@
+
+<div class="form-container">
+    <h1>Actualizar usuarios!</h1>
+    <form [formGroup]="contacForm">
+   
+      
+        <input type="text" id="contenedorEmail" formControlName="id" placeholder="id">
+        
+      <input type="text" id="contenedorNombre" formControlName="nameUs" placeholder="Nombre">
+     
+      <input type="text" id="contenedorEmail" formControlName="email" placeholder="email">
+         
+      <input type="text" formControlName="password" placeholder="contraseña">
+
+      <input type="text" formControlName="apellido" placeholder="apellido">
+
+      <input type="text" formControlName="city" placeholder="ciudad">
+
+      <input type="text" formControlName="rol" placeholder="rol">
+
+      <input type="text" formControlName="descrip" placeholder="descripcion">
+      
+        <br><br/> 
+      <button type="submit" class="btn-send" (click)="updateUser()">Actualizar</button>
+      <br><br/>
+      <button type="submit" class="btn-send" (click)="loadUser()">Cargar usuario</button>
+      <br><br/>
+  
+      <br><br/> 
+      
+    </form>
+  </div>
+  

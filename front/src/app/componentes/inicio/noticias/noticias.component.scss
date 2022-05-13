@@ -1,0 +1,79 @@
+@import "../../../../../node_modules/bootstrap/scss/mixins";
+@import "../../../../../node_modules/bootstrap/scss/functions";
+@import "../../../../../node_modules/bootstrap/scss/variables";
+
+@import "../../../../assets/styles2.scss";
+
+@include media-breakpoint-down(md) {
+  .scroll {
+    width: 100%;
+    margin-left: 0rem !important;
+    height: 450px !important;
+  }
+
+}
+@include media-breakpoint-down(lg) {
+}
+
+
+.scroll {
+  border-radius: 15px;
+  height: 100vh;
+  max-width: 100vh;
+  overflow:scroll; 
+
+}
+.example-card {
+  border: solid 1px rgb(2, 2, 2, 0.3);
+  border-radius: 3%;
+}
+
+img {
+  border-radius: 7%;
+  padding: 0.5rem;
+}
+mat-form-field {
+  width: 100%;
+}
+
+button {
+  font-family: $tipoLetraPrimary !important;
+}
+.scrollComen {
+  height: 25rem;
+  width: 22rem;
+  font-family: $tipoLetraPrimary;
+}
+
+
+
+.btnComent:hover {
+  background-color: $claro-color;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+::-webkit-scrollbar:vertical {
+  width: 5px;
+}
+
+::-webkit-scrollbar-button:increment,
+.contenedor::-webkit-scrollbar-button {
+  display: none;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #797979;
+  border-radius: 20px;
+  border-right: 3px solid $bordes;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}

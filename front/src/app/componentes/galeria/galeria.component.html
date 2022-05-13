@@ -1,0 +1,36 @@
+<div class="fotos col-12">
+    <div class="row">
+  
+  
+      <div     *ngFor="let img of allImg; let indice = index"
+            class="todasFotos col-lg-2 col-md-12"
+            style="width: fit-content;">
+            
+                
+                <img (click)="openDialog(img)" src="{{ img.foto }}" class="imgGaleria"/>
+               
+                <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                  <mat-icon>more_vert</mat-icon>
+                </button>
+                <mat-menu #menu="matMenu">
+                  <button *ngIf="img.principal == 0" mat-menu-item (click) = "imagenPrincipal(img)">
+                    <mat-icon>ok</mat-icon>
+                    
+                    <span>Principal</span>
+                  </button>
+                  <button mat-menu-item  (click)="openDialog(img)">
+                    <mat-icon>update</mat-icon>
+                    <span>Actualizar</span>
+                  </button>
+                
+                </mat-menu>
+
+         
+      
+
+            </div>
+  
+    
+    </div>
+  
+  </div>

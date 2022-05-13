@@ -1,0 +1,60 @@
+@import "../../../../node_modules/bootstrap/scss/mixins";
+@import "../../../../node_modules/bootstrap/scss/functions";
+@import "../../../../node_modules/bootstrap/scss/variables";
+@import "../../../assets/styles2.scss";
+
+@include media-breakpoint-down(lg) {
+
+    .contenido{
+        display:block !important;
+        margin: auto;
+    
+    }
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+
+    .contenido{
+        display:block !important;
+        margin: auto;
+    
+    }
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  }
+.contenido{
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    div{
+  
+        border-radius: 10px;
+        padding: 0.5rem;
+        font-family: $tipoLetraPrimary;
+        color: black;
+        background-color: $claroA;
+    }
+}
+.botones{
+    display: flex;
+    justify-content: space-around;
+}
+button{
+    margin-top: 0.5rem;
+    border-radius: 5px;
+   
+    font-family: $tipoLetraPrimary;
+    color: white;
+    background-color: $oscuro;
+    border-bottom: 3px solid $claroB;
+}
+button:hover{
+    border-bottom: 3px solid $claroC;
+
+}
+.foto{
+    margin: auto;    
+}

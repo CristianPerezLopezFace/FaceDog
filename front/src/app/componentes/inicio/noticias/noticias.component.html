@@ -1,0 +1,21 @@
+<div class="scroll">
+  <div class="card" style="width: 18rem;" *ngIf="sinAmigos">
+    <img src="../../assets/huella.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Encuentra a tus amigos </h5>
+      <p class="card-text">Busca a tus amigos para ver todas sus actividades
+        puedes encontrarlos en la bara de navegacion o pinchando aqui abajo
+      </p>
+      <button mat-button (click)="amigos()">Buscar amigos</button>
+    
+    </div>
+  </div>
+
+<div  *ngFor="let foto of misNoticias" >
+  <br><br>
+      <app-tar-noticia
+      [foto]="foto"
+      [veterinario] = veterinario
+      ></app-tar-noticia>
+    </div>
+  </div>

@@ -1,0 +1,63 @@
+
+<br>
+<div class="contenedor">
+    <div class="">
+        
+        <button
+          class="button"
+          mat-button
+          [disableRipple]="true"
+          (click)="getAllUser('Usuario')"
+          >
+            Usuarios
+        </button>
+        <button
+          class="button"
+          mat-button
+          [disableRipple]="true"  
+          (click)="getAllUser('Veterinario')"
+          >
+            Veterinarios
+        </button>
+
+      </div>
+
+    <div class="containerbuton">
+        <table class="containerTable">
+            <thead>
+                <tr > 
+                  
+                    <th >Nombre   </th>
+                    <th>Email  </th>
+                    <th>id     </th>
+                </tr>
+            </thead>
+            <tbody >
+                <tr id="contenedorEmail" *ngFor="let user of users">
+                  
+                     <td class="fila"  >{{user.name}}</td>
+                    <td class="fila"  >{{user.email}}</td>
+                    <td class="filaId">{{user.id}}</td>
+                    <td><button class="button"  (click)="openDialog(user)" style="border:none"><mat-icon  style="color: #214ea8; border:none;"> update</mat-icon></button></td>
+                     <td><button class="button"  (click)="borrar(user.id)" style="border:none" ><mat-icon  style="color: #214ea8; border:none;">delete</mat-icon></button></td>
+                    
+    
+                </tr>
+                
+            
+            </tbody>
+          
+        </table>
+                   
+            <button class="botonPaginator" (click)="previus()"><</button>
+            <p>    {{sumPag}} / {{total}}    </p>
+            <button class="botonPaginator" (click)="next()">></button>
+             
+        </div>
+        <!-- <button mat-button *ngIf="actualizarBol" (click)="cerrar()">Cerrar</button>
+        <div *ngIf="actualizarBol">
+            <app-actualizar-user
+                [user]="usuario"
+            ></app-actualizar-user>
+        </div> -->
+</div>

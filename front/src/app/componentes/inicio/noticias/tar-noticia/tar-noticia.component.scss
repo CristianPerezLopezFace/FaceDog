@@ -1,0 +1,29 @@
+
+
+
+
+@import "../../../../../../node_modules/bootstrap/scss/mixins";
+@import "../../../../../../node_modules/bootstrap/scss/functions";
+@import "../../../../../../node_modules/bootstrap/scss/variables";
+
+@import "../../../../../assets/styles2.scss";
+
+
+mat-form-field{
+    width: 100%;
+}
+p{
+    color: $oscuro;
+    text-transform: capitalize;
+
+  }
+.descripcion{
+  text-align: center;
+
+
+}
+.nomYfecha{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+}

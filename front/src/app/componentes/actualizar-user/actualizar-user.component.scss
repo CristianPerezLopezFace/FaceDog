@@ -1,0 +1,51 @@
+
+
+@import "../../../../node_modules/bootstrap/scss/mixins";
+@import "../../../../node_modules/bootstrap/scss/functions";
+@import "../../../../node_modules/bootstrap/scss/variables";
+@import "../../../assets/styles2.scss";
+
+
+.form-container{
+    font: 95% Arial, Helvetica;
+    max-width: 500px;
+    padding: 16px;
+    margin:10px auto;
+    background: #f7f7f7;
+  }
+  .form-container h1{
+    background: $claroB;
+    padding:20px 0;
+    font-size: 140%;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+    margin: -16px,-16px,-16px,-16px;
+  }
+  
+  .form-container input[type="text"],
+  .form-container input[type="email"],
+  .form-container textarea{
+    transition: all 0,30s ease-in-out;
+    outline: none;
+    box-sizing: border-box;
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #ccc;
+    padding: 3%;
+    color: #555;
+    font: 95% Arial, helvetica, sans-serial;
+    margin-top: 16px ;
+  }
+   .btn-send{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 3%;
+    background: $claroB;
+    border-bottom: 2px solid $claroB;
+    border-top-style: none;
+    border-left-style:none ;
+    color:#fff;
+    font-size: 15px;
+  
+   }

@@ -1,0 +1,72 @@
+
+
+
+@import "../../../../node_modules/bootstrap/scss/mixins";
+@import "../../../../node_modules/bootstrap/scss/functions";
+@import "../../../../node_modules/bootstrap/scss/variables";
+@import "../../../assets/styles2.scss";
+
+
+.nav-item{  
+  width: 180px;  
+  color: white;
+  border: none;
+  font-family: fantasy;
+  font-size: 1.45rem;
+  padding: 0.5rem 0;
+ 
+  cursor: pointer;
+  text-align: center;
+  
+  font-family: $tipoLetraPrimary;
+
+ }
+ .desplegableNotif{
+    max-height: 20rem;
+    border-radius: 10px;
+    overflow: scroll;
+ }
+
+.notificacion{ 
+      font-family: $tipoLetraPrimary;
+      color: white;
+      background-color: $claroB;
+      border-bottom: 3px solid $claroB;  
+      border-radius: 10px;
+      margin-bottom: 0.2rem;
+   }
+.navbar{
+   justify-content: space-evenly;   
+}
+   
+.notificacion:hover{
+      border-bottom: 3px solid $claroC;
+
+   }
+   ::-webkit-scrollbar {
+      -webkit-appearance: none;
+    }
+    
+    ::-webkit-scrollbar:vertical {
+      width: 5px;
+    }
+    
+    ::-webkit-scrollbar-button:increment,
+    .contenedor::-webkit-scrollbar-button {
+      display: none;
+    }
+    
+    ::-webkit-scrollbar:horizontal {
+      height: 0.5rem;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+      background-color: #797979;
+      border-radius: 20px;
+      border-right: 3px solid $bordes;
+    }
+    
+    ::-webkit-scrollbar-track {
+      border-radius: 10px;
+    }
+    

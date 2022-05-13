@@ -1,0 +1,134 @@
+@import "../../../../node_modules/bootstrap/scss/mixins";
+@import "../../../../node_modules/bootstrap/scss/functions";
+@import "../../../../node_modules/bootstrap/scss/variables";
+@import "../../../assets/styles2.scss";
+
+@include media-breakpoint-down(xl) {
+
+}
+@include media-breakpoint-down(lg) {
+  .inicio{
+    display: grid !important;
+    align-items: flex-start;
+  }
+  .btns{
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    display: flex !important;
+    justify-content: space-around !important;
+  }
+  
+  .divIzq{
+    width: 100%  !important;
+   
+  }
+
+}
+@include media-breakpoint-down(md) {
+  .inicio{
+    display: grid !important;
+   
+  }
+  .btns{
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    display: flex !important;
+    justify-content: space-around !important;
+  }
+  .divIzq{
+  }
+  .centro{
+    width: 50%;
+  }
+
+  
+}
+@include media-breakpoint-down(sm) {
+  
+  .btns{
+    display:block !important;
+    justify-content: space-around !important;
+  }
+  .noticiasYchat{
+    display: block !important;
+  }
+  .centro{
+    width: 100vh !important;
+    height: 30rem !important;
+  }
+
+}
+
+.noticiasYchat{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.centro{
+  margin-left: 1rem;
+  width: 60%;
+}
+
+.inicio{
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.divIzq{
+  border-right: 3px solid $bordes;
+  width: 20rem;
+}
+
+.imgVeter {
+  border-radius: 10px;
+  
+}
+
+.img {
+  width: 300px;
+  height: 200px;
+}
+
+
+.chat {
+  width: 40%;
+  border-left: 3px solid $bordes;
+
+}
+
+  
+  .button {
+    width: 100%;
+    display: inline;
+    text-overflow: ellipsis;
+    letter-spacing: 0.5px;
+    border-bottom: 3px solid white;
+
+
+  &:hover {
+    background-color: rgba($claro-color, 0.2);
+    border-bottom: 3px solid black;
+    ::ng-deep .mat-button-wrapper {
+        color: $claroB;
+    }
+  }
+
+}
+mat-icon {
+  margin-right: 1rem !important;
+}
+
+.buttonSportsSelected {
+   border-bottom: solid 2px black;
+}
+
+
+p,
+button,
+div {
+  font-family: $tipoLetraPrimary;
+  font-size: large;
+  text-align: center;
+}
+

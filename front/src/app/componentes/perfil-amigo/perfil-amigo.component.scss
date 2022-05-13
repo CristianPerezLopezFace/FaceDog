@@ -1,0 +1,46 @@
+
+@import "../../../../node_modules/bootstrap/scss/mixins";
+@import "../../../../node_modules/bootstrap/scss/functions";
+@import "../../../../node_modules/bootstrap/scss/variables";
+@import "../../../assets/styles2.scss";
+
+
+.fotos{
+    display: flex;
+  
+    justify-content: space-around;
+    .todasFotos{
+       min-width: max-content;
+       margin: 1rem;
+  
+      img{
+        width: 10rem;
+        height: 10rem;
+        border: solid 3px $claroC;
+        border-radius: 6px;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    
+       
+      }
+    }
+  
+  }
+  .button {
+    width: fit-content;
+    display: inline;
+    text-overflow: ellipsis;
+    letter-spacing: 0.5px;
+  
+    &:hover {
+      background-color: rgba($claro-color, 0.2);
+      border-bottom: 3px solid black;
+      ::ng-deep .mat-button-wrapper {
+          color: $claroB;
+      }
+    }
+  
+  }
+  mat-icon {
+    margin-right: 1rem !important;
+  }

@@ -1,0 +1,53 @@
+
+
+
+@import "../../../../node_modules/bootstrap/scss/mixins";
+@import "../../../../node_modules/bootstrap/scss/functions";
+@import "../../../../node_modules/bootstrap/scss/variables";
+
+@import "../../../assets/styles2.scss";
+
+@include media-breakpoint-down(md) {
+
+ 
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: solid 1px black;
+}
+img{
+    width: fit-content;
+    height: 10rem;
+    border: solid 3px $bordes;
+    border-radius: 6px;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    border: 3px solid $bordes ;
+
+
+}
+.botones{
+    border-left: 3px solid $bordes !important;
+
+}
+
+button {
+  width: 100%;
+  display: inline;
+  text-overflow: ellipsis;
+  letter-spacing: 0.5px;
+  border-bottom: 3px solid white;
+
+  &:hover {
+    background-color: rgba($claro-color, 0.2);
+    border-bottom: 3px solid black;
+    ::ng-deep .mat-button-wrapper {
+        color: $claroB;
+    }
+  }
+
+}
