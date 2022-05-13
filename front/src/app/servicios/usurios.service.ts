@@ -7,7 +7,7 @@ import { Foto } from '../clases/foto';
 import { Amigo } from '../clases/amigo';
 import { Notificacion } from '../clases/notificacion';
 import { Comentario } from '../clases/comentario';
-const  url = "http://localhost:8000/";      
+const  url = "https://apifacedog.herokuapp.com/";      
 @Injectable({
   providedIn: 'root'
 })
