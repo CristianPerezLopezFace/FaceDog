@@ -11,11 +11,9 @@ export class LoaderService {
 
   show() {
     this.isLoading.next(true);
-    
   }
   hide(){
     this.isLoading.next(false);
-
   }
   
 

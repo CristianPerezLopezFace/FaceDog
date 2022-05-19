@@ -55,8 +55,8 @@ export class SubirFotoComponent implements OnInit {
          let foto = new Foto(titulo,descrpcion,dataFoto,emailFoto,0,0,[],[],new Date(),"user");
          this.userService.addImage(foto).subscribe((m)=>{
             this.message.createMessage("Se subio a tu galeria")
-            this.modalService.dismissAll()
-      })
+          })
+          this.modalService.dismissAll()
     }else{
       this.message.createMessage("No se ha añadido ninguna foto")
     }

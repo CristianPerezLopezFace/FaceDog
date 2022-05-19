@@ -1,7 +1,6 @@
 import { createUrlResolverWithoutPackagePrefix } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { GoogleMapsService } from '../../google-maps.service';
-import { YoutubeService } from '../../youtube.service';
 
 @Component({
   selector: 'app-zonas',

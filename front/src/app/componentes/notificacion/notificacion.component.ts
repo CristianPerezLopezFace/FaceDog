@@ -6,6 +6,7 @@ import { Comentario } from 'src/app/clases/comentario';
 import { Foto } from 'src/app/clases/foto';
 import { Notificacion } from 'src/app/clases/notificacion';
 import { Usuario } from 'src/app/clases/usuario';
+import { LoaderService } from 'src/app/servicios/loader.service';
 import { MessageService } from 'src/app/servicios/message.service';
 import { UsuriosService } from 'src/app/servicios/usurios.service';
 
@@ -18,6 +19,8 @@ export class NotificacionComponent implements OnInit {
   foto!: Foto;
   srcFoto!: string;
   idbjetoSeleccionado!:number
+  nombre:string=""
+  tipo:string=""
   id_user=this.jwt.decodeToken(localStorage.getItem("token")!).sub.id
   ok : boolean | undefined
   value:string=" "
@@ -28,29 +31,28 @@ export class NotificacionComponent implements OnInit {
     public dialogRef: MatDialogRef<NotificacionComponent>,
     private jwt:JwtHelperService,
     @Inject(MAT_DIALOG_DATA) public dialog: any,
-    private message:MessageService
+    private message:MessageService,
+    private loaderService:LoaderService
 
 
   ) {
     
-
-
+    
   }
   ngOnInit(): void {
-   
     this.idbjetoSeleccionado=this.dialog["notificaion"].idObj
     this.notificacion=this.dialog["notificaion"]
     this.getImagen(this.idbjetoSeleccionado)
+    this.nombre=this.notificacion.name
   }
 
   getImagen(id_Objeto: number) {
-   
-
-
+  
       if(this.notificacion.tipo == "comentario en foto"){
             this.userService.getImage(id_Objeto).subscribe((foto) => {
               this.foto = foto;
               this.srcFoto=this.foto.foto
+              this.tipo=this.foto.tipo
 
             });
       }else if(this.notificacion.tipo == "solicitud de amistad"){
@@ -75,15 +77,7 @@ export class NotificacionComponent implements OnInit {
   
   }
   
-  like(id_foto:number){
-    this.ok=true
-    this.userService.addLikeImg(id_foto,this.id_user).subscribe(e => {
-       
-    })
-    setTimeout(() =>  this.ok=false, 1000);
-    
-    setTimeout(() => { this.getImagen(this.idbjetoSeleccionado); this.ngOnInit()}, 1000);
-  }
+ 
   comentar(idFoto:number,emailDestinatario:string,foto:Foto){
     
     let email=this.jwt.decodeToken(localStorage.getItem("token")!).sub.email
@@ -101,7 +95,7 @@ export class NotificacionComponent implements OnInit {
   }
   
   notificaionVista(noti: Notificacion) {
-    console.log("notiifiicacaaaiononnnn")
+    
     if (noti.tipo == 'solicitud de amistad') {
       let aceptar = confirm('Aceptar peticion');
       if (aceptar) {

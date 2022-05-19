@@ -11,6 +11,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { Foto } from 'src/app/clases/foto';
 import { NotificacionComponent } from '../notificacion/notificacion.component';
 import { ControlSocketsService } from 'src/app/servicios/control-sockets.service';
+import { LoaderService } from 'src/app/servicios/loader.service';
 
 
 
@@ -52,7 +53,7 @@ export class MenuNavComponent implements OnInit {
     private router: Router,
     private userService: UsuriosService,
     private jwt: JwtHelperService,
-    private sockerService:ControlSocketsService
+    private loaderService:LoaderService
   ) {}
 
   ngOnInit() {
@@ -75,14 +76,10 @@ export class MenuNavComponent implements OnInit {
   zonas(){
     this.router.navigate(['home/zonas'])
   }
-  consultas(){
-    
+  consultas(){   
     this.router.navigate(['home/consultas'])
   }
-  ngOnDestroy(): void {
-    console.log("destruyendo el NAV")
 
-  }
   getPropiedadesToken() {
     if (this.jwt.decodeToken(localStorage.getItem('token')!)) {
       this.nombreUsuario = this.jwt.decodeToken(
@@ -115,33 +112,23 @@ export class MenuNavComponent implements OnInit {
  
     });
   }
-  // imagenPrincipal(){
-  //   let emailUser=this.jwt.decodeToken(localStorage.getItem("token") !).sub.email;
-  //   this.userService.getImagePrincipal(emailUser).subscribe((e) => {
-  //           if(e.foto != null){
 
-  //             this.dataFotoPrincipal=e.foto
-  //           }
-  //   })
-  // }
   openDialog(noti: Notificacion) {
+    
+    this.loaderService.show()
     const dialogRef = this.dialog.open(NotificacionComponent  ,{
       width: '700px',
       height : '500px',
       data: {
         notificaion:noti,
-        
+         
       }
+
     })
-
+    
     dialogRef.afterClosed().subscribe(result => {
-
-      console.log(`Dialog result: ${result}`);
-    });
-
-    dialogRef.afterClosed().subscribe(result => {
-     
-      this.ngOnInit() 
+      
     })
-    }
+  }
+
   }

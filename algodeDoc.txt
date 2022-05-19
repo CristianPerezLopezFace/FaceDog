@@ -1,0 +1,29 @@
+FACEDOG DOC
+
+La base de datos tiene MongoDb esta subida en el servidor
+		 de MongoDb con 2 usuarios uno el de Practica:Da* con la cuenta petotatata****
+
+La api fastApi esta Dockerizada y desplegada en heroku relacciondo 
+		con la cuenta de facedogapp@gmail.com
+			
+			En la carpeta raizdel proyecto api
+			Comandos:
+				-loguearse : heroku:loguin
+			-loguear contenedor: heroku container:loguin
+
+			    *Crear app firebase
+				-heroku create 'nombre'
+
+			    *Actualizar app
+				-pushear:    heroku container:push web -a 'nombre'
+				-release:    heroku container:release web -a 'nombre'
+				-open:       heroku open -a 'nombre'
+
+
+El fron en angular esta lanzado en firebase con la cuenta facedogapp@gmail.com
+		
+		
+			-loguin : firebase login
+		una vez en lazada la cmd con firebase 
+			-ng build 
+			-firebase deploy

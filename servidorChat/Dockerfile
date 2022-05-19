@@ -5,4 +5,4 @@ WORKDIR /app
 COPY package.json package-lock.json /app/
 RUN npm install
 COPY . . 
-CMD ["node","servidor.js"]
+CMD  node servidor.js --port $PORT

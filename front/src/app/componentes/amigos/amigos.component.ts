@@ -17,7 +17,7 @@ export class AmigosComponent implements OnInit {
   sonAmigos:boolean=true
   amigos:Amigo[]=[]
   id_user = this.jwt.decodeToken(localStorage.getItem('token')!).sub.id;
-
+  
   constructor(private message:MessageService,private comunicacion:ComunicacionComponentsService,private userService:UsuriosService,private router:Router,private jwt:JwtHelperService) { }
 
   ngOnInit(): void {

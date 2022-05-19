@@ -18,7 +18,9 @@ contador=0;
         
         finalize( () => 
         
-        this.loadService.hide())
+        this.loadService.hide()
+        
+        )
     );
    ;
    

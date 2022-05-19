@@ -30,7 +30,7 @@ def login_user(login: loginModel):
             {"email": login.email, "password": login.password}, {'password': 0, "_id": 0})
     except Exception as e:
         raise HTTPException(
-            status_code=500, detail="The email or password entered is not wrong"+e)
+            status_code=500, detail="Email o contraseña incorrectos"+e)
 
     if not user:
         raise HTTPException(status_code=404, detail="User not found by ID")
@@ -62,11 +62,11 @@ def create_user(user: UserModel):
             newUser.update({'habilitado': 0})
             newUser.update({'amigos': []})
             conexion.conexion.insert_one(newUser)
-            menssage = "User: " + user.name + " inserted correctly"
+            menssage = "Usuario: " + user.name + " insertado correctamente"
             
             enviarEmail(user.email)
         else:
-            menssage = "The user already exists in the database"
+            menssage = "El uruario ya esta registrado"
 
         return menssage
     # except:
@@ -99,7 +99,7 @@ def get_one_user(email: str, token_user=Depends(my_token.auth_wrapper)):
         raise HTTPException(status_code=400, detail=str(e))
     except:
         raise HTTPException(
-            status_code=500, detail="The email entered is not wrong")
+            status_code=500, detail="El email introducido no es correcto")
 
 
 @rutas.get(
